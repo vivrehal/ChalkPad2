@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Change Password </title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 23vh;
+            background: url(./images/bglogin1.jpg);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px 30px;
+            background: url(./images/bglogin.jpg);
+            border-radius: 30px;
+            border: 5px groove rgba(228, 23, 23, 0.425);
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 40px;
+            background: rgb(212, 212, 212);
+            margin: 0px;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 40px;
+            background: rgb(228, 228, 228);
+            border-radius: 10px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px;
+            background: rgb(228, 228, 228);
+            border-radius: 3px;
+            border: 3px solid rgb(212, 212, 212);
+            -moz-outline-radius: 3px;
+            -webkit-box-shadow: inset 0 1px 3px rgb(255, 0, 0);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+            outline: 5px solid #e2e2e2;
+            margin: 30px;
+        }
+
+        input[type=password],
+        input[type=text] {
+            margin: 5px 5px;
+            padding: 0 10px;
+            width: 400px;
+            height: 34px;
+            color: #404040;
+            background: white;
+            border: 1px solid;
+            border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+            border-radius: 2px;
+            outline: 5px solid #eff4f7;
+            -moz-outline-radius: 3px;
+            -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+            box-shadow: inset 1 1px 3px rgba(0, 0, 0, 0.377);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+
+        input[type="button"] {
+            padding: 7px 19px;
+            border: 0px;
+            background: rgba(218, 26, 64, 0.925);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #check {
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                margin-top: 0vh;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <h1>Reset Password</h1>
+            </div>
+            <div class="box2">
+                <form method="post" name="changepass" action="">
+                    <p><input type="password" placeholder="Old Password" name="oldpass" id="oldpass" autofocus></p>
+                    <p><input type="password" placeholder="New Password" name="newpass" id="newpass"></p>
+                    <p><input type="password" placeholder="Confirm Password" name="confirmpass" id="confirmpass"></p>
+                    <p> <label id="check"><input type="checkbox" name="showpass" id="showpass">
+                            Show Password</label></p>
+                    <p class="button"><input type="button" name="submitpass" id="submitpass" value="Reset"
+                            onclick="rese()"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/login.js"></script>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            
+            $("#showpass").bind("click", function () {
+                var newpass = $("#newpass");
+                var oldpass = $("#oldpass");
+                var confirmpass = $("#confirmpass"); if ($(this).is(":checked")) {
+                    newpass.after('<input onchange = "PasswordChanged(this);" id = "txt_' + newpass.attr("id") + '" type = "text" value = "' + newpass.val() + '" />');
+                    newpass.hide();
+                    oldpass.after('<input onchange = "PasswordChanged(this);" id = "txt_' + oldpass.attr("id") + '" type = "text" value = "' + oldpass.val() + '" />');
+                    oldpass.hide();
+
+                } else {
+                    newpass.val(newpass.next().val());
+                    newpass.next().remove();
+                    newpass.show();
+                    oldpass.val(oldpass.next().val());
+                    oldpass.next().remove();
+                    oldpass.show();
+
+                }
+            });
+        });
+        function PasswordChanged(txt) {
+            $(txt).prev().val($(txt).val());
+        };
+    </script>
+</body>
+
+</html>

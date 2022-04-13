@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="icon" type="image/x-icon" href="./images/icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <style type="text/css">
+    .container1 {
+      margin: 20px 19vw;
+      background: rgba(245, 245, 245, 0.418);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .container {
+      margin: 10px 0px;
+      border: 5px solid grey;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.836);
+    }
+
+    .enter {
+      border: 10px;
+      background-color: rgba(245, 245, 245, 0);
+      border-radius: 0px;
+      margin: 10px 20vwpx;
+      padding: 20px;
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    fieldset {
+      border-radius: 00px;
+      background-color: rgba(255, 241, 214, 0.856);
+      border-radius: 10px;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url(./images/univ.png);
+      background-size: cover;
+    }
+
+    input[type="button"] {
+      background-color: rgba(226, 19, 19, 0.74);
+      color: rgb(255, 255, 255);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      border: 0px;
+      transition: 0.25s;
+      margin: 10px 2vw;
+    }
+
+    input[type="button"]:hover {
+      background-color: rgb(211, 51, 51);
+      padding: 10px 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="images/logo.png" height="70" width="300" style="animation: slideright 1s ease-out 0s 1 forwards;">
+
+  <nav class="nav">
+    <ul>
+      <div class="dropdown">
+        <li><a href="project.html"><b>Home</b></a>
+
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="#"><b>Student Info</b></a>
+          <div class="dropdown-content">
+            <a href="./project.html">Complete Info</a>
+            <a href="./Apply lv.html">Apply Duty/Medical leave</a>
+            <a href="https://www.researchgate.net/publication/348306652_CSE_ASSIGNMENT">Download Section</a>
+            <a href="./Gate Pass.html">Gate Pass</a>
+            <a href="javascript:void(0);" name="My Window Name" title=" My title here "
+              onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=550,height=170,left=150,top=200,toolbar=0,status=0,&quot;);">Change
+              Password</a>
+          </div>
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="#"><b>Acadamic</b></a>
+          <div class="dropdown-content">
+            <a href="./TIME TABLE.HTML">Time Table</a>
+            <a href="./ATTENDANCE.HTML">Display Attendence</a>
+            <a href="./DISPLAY MARKS.HTML">Display Marks</a>
+            <a
+              href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+          </div>
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href=""><b>Pay Fee</b></a>
+          <div class="dropdown-content">
+            <a href="./Online fee payment.html">Online Fee Payment</a>
+            <a href="./FINE.HTML">Fine</a>
+            
+
+          </div>
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="./feedback.html"><b>Feedback</b></a>
+
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="./project.html"><b>Hostel</b></a>
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="./uploaddoc.html"><b>Upload Documents</b></a>
+
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="#"><b>Registration forms</b></a>
+          <div class="dropdown-content">
+            
+            <a href="./SPD.html">Student Parent Details</a>
+            
+            						<a href="./ECell.html">E-Cell Registration Form</a>
+                        <a href="./extracurricular.html">Extra Curricular</a>
+          </div>
+      </div>
+      </li>
+      <div class="dropdown">
+        <li><a href="#"><b>About us</b></a>
+
+        </li>
+        <li style="color: black;" id="ccd"><a href="#"><b>Covid Info</b></a></li>
+
+    </ul>
+  </nav>
+  <div class="container1">
+    <p> Dear <b>Student</b>,
+      <br>
+    <p> Your valueable opinions and suggestions are solicated for further improvement of the CU Administration/Academic
+      system, Your responses will be kept confidential and used only for the stated purpose.
+    <div class="enter">
+      <div class="container">
+        <p><b>
+            <font color="RED"> INSTRUCTION TO FILL QUESTIONNAIRE </font>
+          </b></p>
+        <p> All questions are compulsory.
+          <br>
+          Each question has five responses, choose the most appopriate one.
+      </div>
+    </div>
+    <fieldset>
+      <label>How do you find the curriculum? </label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="1" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="1" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Were instructions easy to follow? </label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="2" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="2" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Were reading materials and refrences regarding curriculum/ subjects easily found? </label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="3" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="3" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Were the subjects relevant to your job and your future aspirations?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="4" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="4" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Enter the comments</label>
+      <br>
+      <textarea rows="5" cols="80" id="lolk"> </textarea>
+    </fieldset>
+    <fieldset>
+      <label>Were the subjects applicable in your daily/practical life?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="5" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="5" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Enter the comments</label>
+      <br>
+      <textarea rows="5" cols="80"> </textarea>
+    </fieldset>
+    <fieldset>
+      <label>Did the subjects/course help in developing your personality ?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="6" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="6" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Enter the comments</label>
+      <br>
+      <textarea rows="5" cols="80"> </textarea>
+    </fieldset>
+    <fieldset>
+      <label>Were the subjects relevant to your job and future aspirations ?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="7" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="7" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Were the subjects applicable in your practical/ daily life?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="8" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="8" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <label>Did the subjects/course help in developing your personality?</label>
+      <br>
+      <label>YES</label>
+      <input type="radio" id="How do you find the curriculum?" name="9" text="enter" value="YES">
+      <label>NO</label>
+      <input type="radio" id="How do you find the curriculum?" name="9" text="enter" value="NO">
+    </fieldset>
+    <fieldset>
+      <p> What was the most useful part of the curiculum / course and why?
+        <br>
+        <label>Enter the comments</label>
+        <br>
+        <textarea rows="5" cols="80"> </textarea>
+    </fieldset>
+    <fieldset>
+      <p>What was the least useful part of the curriculum / course and why?
+        <br>
+        <label>Enter the comments</label>
+        <br>
+        <textarea rows="5" cols="80"> </textarea>
+    </fieldset>
+    <fieldset>
+      <p> What other changes would you like to suggest to improve the curriculum / course?
+        <br>
+        <label>Enter the comments</label>
+        <br>
+        <textarea rows="5" cols="80"> </textarea>
+    </fieldset>
+    <fieldset>
+      <p> Add your comments.
+        <br>
+        <label>Enter the comments</label>
+        <br>
+        <textarea rows="5" cols="80" id="d7"> </textarea>
+    </fieldset>
+    <div>
+      <input type="button" name="SUBMIT" value="Submit" onclick="validate()">
+    </div>
+  </div>
+  <script>
+    function validate() {
+      var ek = document.querySelector('input[name="1"]:checked');
+      var dwo = document.querySelector('input[name="2"]:checked');
+      var teen = document.querySelector('input[name="3"]:checked');
+      var four = document.querySelector('input[name="4"]:checked');
+      var panch = document.querySelector('input[name="5"]:checked');
+      var six = document.querySelector('input[name="6"]:checked');
+      var saat = document.querySelector('input[name="7"]:checked');
+      var aath = document.querySelector('input[name="8"]:checked');
+      var nine = document.querySelector('input[name="9"]:checked');
+      let d1 = document.querySelectorAll('textarea')[0].value;
+      let d2 = document.querySelectorAll('textarea')[1].value;
+      let d3 = document.querySelectorAll('textarea')[2].value;
+      let d4 = document.querySelectorAll('textarea')[3].value;
+      let d5 = document.querySelectorAll('textarea')[4].value;
+      let d6 = document.querySelectorAll('textarea')[5].value;
+      let d7 = document.getElementById("d7").value;
+      let d11 = document.querySelectorAll('textarea')[0];
+      let d12 = document.querySelectorAll('textarea')[1];
+      let d13 = document.querySelectorAll('textarea')[2];
+      let d14 = document.querySelectorAll('textarea')[3];
+      let d15 = document.querySelectorAll('textarea')[4];
+      let d16 = document.querySelectorAll('textarea')[5];
+      let d17 = document.getElementById("d7")
+     
+      console.log(d1);
+
+      if (dwo != null && teen != null && four != null && panch != null && six != null && saat != null && aath != null && nine != null && ek!= null) {
+        if (d1 != ' ') {
+          if (d2 != ' ') {
+            if (d3 != ' ') {
+              if (d4 != ' ') {
+                if (d5 != ' ') {
+                  if (d6 != ' ') {
+                    if (d7 != ' ') {
+                      if (confirm(`Do you want to submit the following feedback?`) == true) {
+                        alert("Feedback Submitted Successfully.")
+                      }
+                    }
+                    else { d17.focus(); alert("Comment can't be empty!"); }
+                  }
+                  else { d16.focus(); alert("Comment can't be empty!"); }
+                }
+                else { d15.focus(); alert("Comment can't be empty!"); }
+              }
+              else { d14.focus(); alert("Comment can't be empty!"); }
+            }
+            else { d13.focus(); alert("Comment can't be empty!"); }
+          }
+          else { d12.focus(); alert("Comment can't be empty!"); }
+        }
+        else { d11.focus(); alert("Comment can't be empty!"); }
+      }
+      else {
+        alert(`Check all "YES" or "NO"`);
+      }
+    }
+  </script>
+</body>
+
+</html>

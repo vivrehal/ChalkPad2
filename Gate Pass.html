@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gate Pass</title>
+    <style>
+		body{background: url(./images/univ.png);background-size:100vw 100vh;}
+        .container {
+            width: 30vw;
+            margin: auto;
+            padding-top: 0px;
+            background: rgba(235, 235, 235, 0.884);
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            width: 20vw;
+            margin: 0px 0px 0px 0px;
+            background-color: rgba(235, 235, 235, 0.89);
+            color: rgb(0, 0, 0);
+            padding:10px 5vw;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: red;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            width: 90px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 10px;
+            opacity: 0.6;
+        }
+
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            background-color: red;
+            color: white;
+            width: 100px;
+            opacity: 1;
+        }
+
+        .bod {
+            border: 4px double rgb(109, 79, 79);
+            height: 38.5vh;
+            width: 30vw;
+            margin: auto;
+            padding: 1rem;
+            background: rgba(255, 30, 0, 0.274);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.png" height="70" width="300">
+
+	<nav class="nav">
+		<ul>
+			<div class="dropdown">
+				<li><a href="project.html"><b>Home</b></a>
+					
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Student Info</b></a>
+					<div class="dropdown-content">
+					
+						<a href="./Apply lv.html">Apply Duty/Medical leave</a>
+						<a href="https://www.researchgate.net/publication/348306652_CSE_ASSIGNMENT">Download Section</a>
+						<a href="./Gate Pass.html">Gate Pass</a>
+						<a href="javascript:void(0);" name="My Window Name" title=" My title here " onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=550,height=170,left=150,top=200,toolbar=0,status=0,&quot;);">Change Password</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Acadamic</b></a>
+					<div class="dropdown-content">
+						<a href="./TIME TABLE.HTML">Time Table</a>
+						<a href="./ATTENDANCE.HTML">Display Attendence</a>
+						<a href="./DISPLAY MARKS.HTML">Display Marks</a>
+						<a href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href=""><b>Pay Fee</b></a>
+					<div class="dropdown-content">
+						<a href="./Online fee payment.html">Online Fee Payment</a>
+						<a href="./FINE.HTML">Fine</a>
+						
+						
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./feedback.html"><b>Feedback</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./project.html"><b>Hostel</b></a>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./uploaddoc.html"><b>Upload Documents</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Registration forms</b></a>
+					<div class="dropdown-content">
+						
+						<a href="./SPD.html">Student Parent Details</a>
+						
+												<a href="./ECell.html">E-Cell Registration Form</a>
+                        <a href="./extracurricular.html">Extra Curricular</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>About us</b></a>
+
+			</li>
+			<li style="color: black;" id="ccd"><a href="#"><b>Covid Info</b></a></li>
+
+		</ul>
+	</nav>
+    <div class="bod">
+        <h2>Apply For Gate Pass</h2>
+        <div class="container">
+            <form>
+                <table cellspacing="15" cellpadding="5" class="table">
+                    <tr>
+                        <td><b>Date:</b></td>
+                        <td id="date">kgg</td>
+                    </tr>
+                    <tr>
+                        <td><b>Leave Type:</b></td>
+                        <td><input type="radio" name="full" onclick="hide()">Full Day <input type="radio" name="full"
+                                id="type" onclick="unhide()">Partial Time</td>
+                    </tr>
+                    <tr>
+                        <td><b>Leave Required On:</b></td>
+                        <td><input type="datetime-local" required></td>
+                    </tr>
+                    <tr id="opt" style="visibility: collapse;">
+                        <td><b>From</b></td>
+                        <td><input type="time" required> <b>To</b> <input type="time"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Reason for leave:</b></td>
+                        <td><input type="text" required></td>
+                    </tr>
+                </table>
+                <center> <button class="button" id="apply">Apply</button></center>
+            </form>
+        </div>
+    </div>
+    <script>
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+
+        document.getElementById("apply").addEventListener("click", function () {
+            confirm(`Your Application Has Been Submitted`)
+        })
+        function unhide() {
+            a = document.getElementById('type')
+            b = document.getElementById('opt')
+            opt.style.visibility = 'initial'
+        }
+        function hide() {
+
+            opt.style.visibility = 'collapse'
+        }
+    </script>
+</body>
+
+</html>

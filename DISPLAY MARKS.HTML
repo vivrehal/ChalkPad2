@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DISPLAY MARKS</title>
+	<link rel="icon" type="image/x-icon" href="./images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<style type="text/css">
+				body{background: url(./images/univ.png);background-size: cover;}
+		.heading{display: flex;background-color:lightyellow;border: 1px solid red;padding: 0px 10px;height: 40px;margin: 0px 100px 0px 100px ;border-radius: 10px 10px 0px 0px}
+		.heading h4{display: flex;margin: 10px }
+		.tbar  {background-color: grey; color: white; margin: 0px 100px 0px 100px ;padding:15px 35px }
+		.tbar h4{display: inline ;margin: 0px}
+		.tbar h3{display: inline; margin: 20px}
+		.record {display: flex; justify-content: center;  margin: 0px 100px 0px 100px ;}
+		.record table {border: 0.5px solid grey ;width: 85.9vw;margin-top: 0px; border-radius: 0px 0px 10px 10px;font-size: 16px;  }
+		.record table tr:nth-child(odd){background-color: lightgrey}
+		.record table tr:nth-child(even){background-color: rgb(255, 255, 255)}
+		.btn button {background-color: red; padding: 10px 20px; border-radius: 10px ;color: white; font-weight: bold;border: 0px;transition: .25s;}
+        .btn {padding: 15px 20px; border-radius: 10px;border: 0px ;margin-left: 75vw}
+        .btn button:hover{padding:15px 25px; box-shadow: 1px 1px 4px grey }
+		
+	</style>
+</head>
+<body>
+	<img src="images/logo.png" height="70" width="300"style="animation: slideright 1s ease-out 0s 1 forwards;">
+	<nav class="nav">
+		<ul>
+			<div class="dropdown">
+				<li><a href="project.html"><b>Home</b></a>
+					
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Student Info</b></a>
+					<div class="dropdown-content">
+					
+						<a href="./Apply lv.html">Apply Duty/Medical leave</a>
+						<a href="https://www.researchgate.net/publication/348306652_CSE_ASSIGNMENT">Download Section</a>
+						<a href="./Gate Pass.html">Gate Pass</a>
+						<a href="javascript:void(0);" name="My Window Name" title=" My title here " onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=550,height=170,left=150,top=200,toolbar=0,status=0,&quot;);">Change Password</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Acadamic</b></a>
+					<div class="dropdown-content">
+						<a href="./TIME TABLE.HTML">Time Table</a>
+						<a href="./ATTENDANCE.HTML">Display Attendence</a>
+						<a href="./DISPLAY MARKS.HTML">Display Marks</a>
+						<a href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href=""><b>Pay Fee</b></a>
+					<div class="dropdown-content">
+						<a href="./Online fee payment.html">Online Fee Payment</a>
+						<a href="./FINE.HTML">Fine</a>
+						
+						
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./feedback.html"><b>Feedback</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./project.html"><b>Hostel</b></a>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./uploaddoc.html"><b>Upload Documents</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Registration forms</b></a>
+					<div class="dropdown-content">
+						
+						<a href="./SPD.html">Student Parent Details</a>
+						
+												<a href="./ECell.html">E-Cell Registration Form</a>
+                        <a href="./extracurricular.html">Extra Curricular</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>About us</b></a>
+
+			</li>
+			<li style="color: black;" id="ccd"><a href="#"><b>Covid Info</b></a></li>
+
+		</ul>
+	</nav>
+<div class="heading">
+	<h4>Academic details>>Display marks </h4></div>
+	<div class="container">
+		<div class="tbar">
+			<h4 style="align-self: flex-end;">Study Period &nbsp;<select>
+				<option>Sem1</option>
+				<option>Sem2</option>
+				<option>Sem3</option>
+				<option>Sem4</option>
+				<option>Sem5</option>
+				<option>Sem6</option>
+				<option>Sem7</option>
+				<option>Sem8</option>
+			</select> </h4></div>
+			<div class="record"id="toprint">
+		<table border="1px" cellpadding="10px" cellspacing="0px">
+			
+		    <tr>
+		    	<td><B>#</B></td>
+		    	<td><B>Subject</B></td>
+		    	<td><B>Group</B></td>
+		    	<td><B>Test type</B></td>
+		    	<td><B>Test date</B></td>
+		    	<td><B>Study period</B></td>
+		    	<td><B>Teacher name</B></td>
+		    	<td><B>Test</B></td>
+		    	<td><B>M.M.</B></td>
+		    	<TD><B>M.S.</B></TD>
+		    	<TD><B>%age</B></TD>
+		    <tr>
+		    	<td>1</td>
+		    	<td>Python</td>
+		    	<td>DG21</td>
+		    	<td>Internal (Component2)</td>
+		    	<td>18sept21</td>
+		    	<td>1 SEM</td>
+		    	<td>Sonam Mittal</td>
+		    	<td>Test1</td>
+		    	<td>30</td>
+		    	<td>30</td>
+		    	<td>100</td>
+		     </tr>
+		     <tr>
+		    	<td>2</td>
+		    	<td>Python</td>
+		    	<td>DG21</td>
+		    	<td>Internal (Component2)</td>
+		    	<td>28sept21</td>
+		    	<td>1 SEM</td>
+		    	<td>Sonam Mittal</td>
+		    	<td>Test2</td>
+		    	<td>30</td>
+		    	<td>21.4</td>
+		    	<td>71.33</td>
+		     </tr>
+		     <tr>
+		    	<td>3</td>
+		    	<td>Python</td>
+		    	<td>DG21</td>
+		    	<td>Internal (Component3)</td>
+		    	<td>11oct21</td>
+		    	<td>1 SEM</td>
+		    	<td>Sonam Mittal</td>
+		    	<td>Test3</td>
+		    	<td>30</td>
+		    	<td>30</td>
+		    	<td>100</td>
+		     </tr>
+		     <tr>
+		    	<td>4</td>
+		    	<td>Python</td>
+		    	<td>DG21</td>
+		    	<td>Internal (Component2)</td>
+		    	<td>29oct21</td>
+		    	<td>1 SEM</td>
+		    	<td>Sonam Mittal</td>
+		    	<td>Test4</td>
+		    	<td>30</td>
+		    	<td>30</td>
+		    	<td>100</td>
+		     </tr>
+		     <tr>
+		     	<TD>1</TD>
+		    	<td>CASA</td>
+		    	<td>DG21</td>
+		    	<td>Internal (Component1)</td>
+		    	<td>13nov21</td>
+		    	<td>1 SEM</td>
+		    	<td>Krishan</td>
+		    	<td>FA-1</td>
+		    	<td>10</td>
+		    	<td>9</td>
+		    	<td>90</td>
+		    	
+		     
+		</table>
+	</div>
+	<div class="btn">
+			<button onclick="printtt()">PRINT</button>
+		</div>
+		<script type="text/javascript">  
+			function printtt() {  
+				var divContents = document.getElementById("toprint").innerHTML;  
+				var printWindow = window.open('', '', 'height=500,width=1000');  
+				printWindow.document.write('<html><head><title>Print DIV Content</title><style>table {border: 0.5px solid grey ;margin: 0px 1;width: 85.9vw; border-radius: 0px 0px 10px 10px;font-size: 16px;}table tr:nth-child(odd){background-color: lightgrey}table tr:nth-child(even){background-color: rgb(255, 255, 255)}</style>');  
+				printWindow.document.write('</head><body >');  
+				printWindow.document.write(divContents);  
+				printWindow.document.write('</body></html>');  
+				printWindow.document.close();  
+				printWindow.print();  
+			}  
+		</script>  	
+</body>
+</html>

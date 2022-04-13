@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+  
+
+        .cont {
+            display: flex;
+            flex-flow: column;
+            border-style: solid;
+            width: 90vw;
+            padding-bottom: 20px;
+            margin: auto;
+            overflow-x: auto;
+        }
+
+        .table {
+            background-color: rgb(241, 241, 241);
+            border-style: solid;
+            border: 1px solid black;
+            width: 85vw;
+            margin: auto;
+            border-width: 2px;
+            border-spacing: 3px;
+        }
+
+        td,
+        th {
+            padding: 13px;
+            border: 1px solid rgb(28, 25, 71);
+            transition: 0.5s;
+        }
+
+        td:hover {
+            background-color: gray;
+            border: none;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-family: cursive;
+            margin: auto;
+            padding: 20px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.png" height="70" width="300">
+
+	<nav class="nav">
+		<ul>
+			<div class="dropdown">
+				<li><a href="project.html"><b>Home</b></a>
+					
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Student Info</b></a>
+					<div class="dropdown-content">
+						<a href="./project.html">Complete Info</a>
+						<a href="./Apply lv.html">Apply Duty/Medical leave</a>
+						<a href="">Download Section</a>
+						<a href="./Gate Pass.html">Gate Pass</a>
+						<a href="javascript:void(0);" name="My Window Name" title=" My title here " onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=550,height=170,left=150,top=200,toolbar=0,status=0,&quot;);">Change Password</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Acadamic</b></a>
+					<div class="dropdown-content">
+						<a href="./TIME TABLE.HTML">Time Table</a>
+						<a href="./ATTENDANCE.HTML">Display Attendence</a>
+						<a href="./Marks.html">Display Marks</a>
+						<a href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href=""><b>Pay Fee</b></a>
+					<div class="dropdown-content">
+						<a href="./Online fee payment.html">Online Fee Payment</a>
+						<a href="./FINE.HTML">Fine</a>
+						<a href="#">Fee payment history</a>
+						
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Feedback</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./project.html"><b>Hostel</b></a>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Upload Documents</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Registration forms</b></a>
+					<div class="dropdown-content">
+						<a href="">Reappear Registration Form</a>
+						<a href="">Student Parent Details</a>
+						<a href="">Online Registration Form</a>
+						<a href="">E-Cell Registration Form</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>About us</b></a>
+
+			</li>
+			<li style="color: black;" id="ccd"><a href="#"><b>Covid Info</b></a></li>
+
+		</ul>
+	</nav>
+    <div class="cont">
+        <h2>Student Marks</h2>
+        <table class="table">
+            <tr>
+                <th>#</th>
+                <th>Subject</th>
+                <th>Group</th>
+                <th>Test Type</th>
+                <th>Test Date</th>
+                <th>Study Period</th>
+                <th>Teacher Name</th>
+                <th>Test</th>
+                <th>M.M</th>
+                <th>M.S.</th>
+                <th>%age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 2)</td>
+                <td>18/09/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>Test-1</td>
+                <td>30</td>
+                <td>24</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 2)</td>
+                <td>28/09/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>Test-2</td>
+                <td>30</td>
+                <td>15</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 2)</td>
+                <td>18/09/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>Test3</td>
+                <td>30</td>
+                <td>30</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 2)</td>
+                <td>28/10/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>Test-4</td>
+                <td>30</td>
+                <td>30</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 1)</td>
+                <td>13/11/2021</td>
+                <td>1 SEM</td>
+                <td>Krishan</td>
+                <td>FA-11</td>
+                <td>10</td>
+                <td>10</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 2)</td>
+                <td>16/11/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>Test-5</td>
+                <td>30</td>
+                <td>28.4</td>
+                <td>94.67</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Problem solving using python programming(CS140)</td>
+                <td>21CS-G26</td>
+                <td>Internal(Component 1)</td>
+                <td>27/11/2021</td>
+                <td>1 SEM</td>
+                <td>Soni</td>
+                <td>CN1</td>
+                <td>20</td>
+                <td>19.8</td>
+                <td>99</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

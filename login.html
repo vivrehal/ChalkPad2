@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login: Chalkpad</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style2.css'>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+
+</head>
+
+<body background="./images/bglogin1.jpg">
+    <div>
+        <center>
+            <img src="./images/chitkara-logo.png"
+                style="position: relative;margin-top: 24px auto;height: 105px;width:144px;">
+        </center>
+    </div>
+    <div class="container">
+        <div class="login">
+            <h1>Login to Chalkpad</h1>
+            <form method="post" action="" name="forme">
+                <p><input type="text" name="name" placeholder="Roll No. or Username" id="name"></p>
+                <p><input type="password" name="password" placeholder="Password" id="password"></p>
+                <p><select id="dpdn">
+                        <option selected>CUIET</option>
+                        <option selected>CCAE</option>
+                        <option selected>CBS</option>
+                    </select>
+                    <select id="dpdn" style="margin-left: 40px;">
+                        <option selected>2022-2023</option>
+                        <option selected>2023-2024</option>
+                        <option selected>2024-2025</option>
+                    </select>
+                </p>
+                <p class="remember_me">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me">
+                        Remember me on this device
+                    </label>
+                </p>
+                <p class="submit"><input type="submit" name="commit" id="committ" onclick="user1()"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="login-help">
+        <p>Forgot your password? <a href="#">Click here to reset it</a>.</p>
+    </div>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

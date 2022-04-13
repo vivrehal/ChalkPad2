@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$(".loader").fadeOut("slow");
+		});
+	</script>
+
+	<title>Chalkpad 2.0</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<style>
+		.loader {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(0, 0, 0);
+			opacity: .8;
+		}
+
+		.loader p {
+			display: flex;
+			justify-content: center;
+			font-size: 60px;
+			margin-top: 40vh;
+			animation: load 1s ease-in-out 0s infinite;
+		}
+
+		@keyframes load {
+			from {
+				color: rgb(255, 255, 255);
+				opacity: 0.7;
+			}
+
+			to {
+				color: red;
+				opacity: 0.8;
+			}
+		}
+	</style>
+	<link rel="icon" type="image/x-icon" href="./images/icon.png">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&family=Ubuntu:wght@300&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slide.css">
+
+</head>
+
+<body>
+	<div class="loader">
+		<p><b>EXPLORE YOUR POTENTIAL...</b></p>
+	</div>
+</body>
+
+<body background="./images/univ.png">
+
+	<img src="images/logo.png" height="70" width="300" style="animation: slideright 1s ease-out 0s 1 forwards;">
+	<div style="position: relative;"></div>
+	<div class="tip">
+		<p class="headerr" id="blackfont">CUIET | <select style="border: 2px solid black;border-radius: 10px;">
+				<option>2022-2023</option>
+			</select> | <a href="./login.html" style="text-decoration: none;color: red;">LOGOUT</a><br></p>
+		<p id="blackfo" style="position: relative;
+		width: 104px;
+		left: 79vw;
+		top: -58px;font-weight: bold;font-family: 'Ubuntu', cursive, sans-serif;">Student Name</p>
+		<p id="blackfon" style="position: relative;
+		left: 81.3vw;
+		width: 104px;
+		top: -32px;
+		font-family: 'Ubuntu', cursive, sans-serif;
+		margin: -36px;font-weight: bold;">Mentor Name</p>
+	</div>
+	</div>
+	<div class="idga">
+		<nav class="nav">
+			<ul>
+				<div class="dropdown">
+					<li><a href="project.html"><b>Home</b></a>
+
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="#"><b>Student Info</b></a>
+						<div class="dropdown-content">
+						
+							<a href="./Apply lv.html">Apply Duty/Medical leave</a>
+							<a href="https://www.researchgate.net/publication/348306652_CSE_ASSIGNMENT">Download Section</a>
+							<a href="./Gate Pass.html">Gate Pass</a>
+							<a href="javascript:void(0);" name="My Window Name" title=" My title here "
+								onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=625,height=440,left=150,top=200,toolbar=0,status=0,&quot;);">Change
+								Password</a>
+						</div>
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="#"><b>Acadamic</b></a>
+						<div class="dropdown-content">
+							<a href="./TIME TABLE.HTML">Time Table</a>
+							<a href="./ATTENDANCE.HTML">Display Attendence</a>
+							<a href="./DISPLAY MARKS.HTML">Display Marks</a>
+							<a
+								href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+						</div>
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href=""><b>Pay Fee</b></a>
+						<div class="dropdown-content">
+							<a href="./Online fee payment.html">Online Fee Payment</a>
+							<a href="./FINE.HTML">Fine</a>
+							
+
+						</div>
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="./feedback.html"><b>Feedback</b></a>
+
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="./project.html"><b>Hostel</b></a>
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="./uploaddoc.html"><b>Upload Documents</b></a>
+
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="#"><b>Registration forms</b></a>
+						<div class="dropdown-content">
+							
+							<a href="./SPD.html">Student Parent Details</a>
+							
+													<a href="./ECell.html">E-Cell Registration Form</a>
+                        <a href="./extracurricular.html">Extra Curricular</a>
+						</div>
+				</div>
+				</li>
+				<div class="dropdown">
+					<li><a href="#"><b>About us</b></a>
+					</li>
+				</div>
+				<li style="color: black;" id="ccd"><a href="./Covid-19-Guidelines (1).pdf"><b>Covid Info</b></a></li>
+				<li style="margin-bottom: 0px;" id="marginnrml"><button onclick="dark()" id="darkbtn"
+						style="margin-bottom: 0px;"><b>Dark Mode</b></button><button onclick="normal()"
+						id="normalbtn"><b>Light
+							Mode</b></button></li>
+			</ul>
+
+		</nav>
+		<div class="news">
+			<img src="./images/pngegg.png" id="newws" onclick="newss()">
+		</div>
+	</div>
+	<div id="tutu">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 4</div>
+				<img src="./images/news-image.jpg" style="width:100%">
+				<div class="text">News#1</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 4</div>
+				<img src="./images/Toast.jpg" style="width:100%">
+				<div class="text">News#2</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 4</div>
+				<img src="./images/Lalit-Kala.jpg" style="width:100%">
+				<div class="text" style="color: black;">News#3</div>
+			</div>
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 4</div>
+				<img src="./images/Dhiresh-Kulshrestha.jpg" style="width:100%">
+				<div class="text">News#4</div>
+			</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</div>
+
+	<div class="social">
+		<button><a href="https://twitter.com/ChitkaraU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" height="40px" width="40px"></a></button>
+		<button><a href="https://www.instagram.com/chitkarau/?hl=en" target="_blank"><img src="images/instaa.png" height="40px" width="40px"></a></button>
+		<button><a href="https://www.facebook.com/ChitkaraU/" target="_blank"><img src="images/FB.png" height="40px" width="40px"></a></button>
+		<button><a href="https://www.linkedin.com/school/chitkara-university/" target="_blank"><img src="images/lin.png" height="40px" width="40px"></a></button>
+	</div>
+	<br>
+	<div class="lol">
+		<div class="grades" id="gradesdark">
+			<p>GRADES</p>
+			<div style="font-family:serif;font-size: 12px; text-align: justify;margin: 9px;"><a
+					href="./DISPLAY MARKS.HTML">Overall grade list or grade list of respective semester
+					can be viewed.</a> <br><br><br><img src="images/1.png" align="right"
+					style="border-radius: 10px; height: 50px; width: 50px;"></div>
+		</div>
+		<div class="grades" id="gradesdark">
+			<p>GATE PASS</p>
+			<div style="font-family:serif;font-size: 12px; text-align: left;margin: 9px;"><a
+					href="./Gate Pass.html">Student required this Gate
+					Pass whenever he/she enters/left the university.</a><br><br><img src="images/5.png"
+					style="border-radius: 10px; height: 50px; width: 50px;" align="right"></div>
+		</div>
+
+		<div class="grades" id="gradesdark">
+			<p>MARKS</p>
+			<div style="font-family:serif;font-size: 12px; text-align: left ;margin: 9px;"><a
+					href="/Marks.html">Coursewise marks in
+					Practicals/Theories/Sessionals/ Assignments in accordance with the semester can be viewed.</a> <img
+					src="images/2.png" style="border-radius: 10px; height: 50px; width: 50px;" align="right"></div>
+		</div>
+
+		<div class="grades" id="gradesdark">
+			<p>APPLY LEAVE</p>
+			<div style="font-family:serif;font-size: 12px; text-align: justify;margin: 9px;"><a
+					href="./Apply lv.html">Apply Duty/Medical Leave
+					online. </a><br><br><br><br><img src="images/4.png"
+					style="border-radius: 10px; height: 50px; width: 50px;" align=right></div>
+		</div>
+
+		<div class="grades" id="gradesdark">
+			<p>FACILITY</p>
+			<div style="font-family:serif;font-size: 12px; text-align: justify;margin: 9px;"><a
+					href="https://punjab.chitkara.edu.in//Interface/Student/listBookHostelOnline.php">Hostel
+					Facility</a><br><a href="./Transport_Undertaking_2020_21.pdf">Transport
+					Facility</a><br><br><br><img src="images/3.png"
+					style="border-radius: 10px; height: 50px; width: 50px;" align="right"></div>
+		</div>
+
+	</div>
+	<div class="lol1">
+		<div class="sq1" style="height: 600px;width: 400px;display: flex;flex-direction: column;">
+
+			<div>
+				<p
+					style="border-top-left-radius: 10px;padding: 13.4px 10px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+					<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+				</p>
+				<h4
+					style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 6.15px;display: inline-block;width: 352.3px;font-family:'Oxygen', sans-serif ;margin-bottom: 0px">
+					Recent Activity</h4>
+			</div>
+
+			<div class="recentcontainer" style="background-color: lightgray;" id="recentd">
+				<div id="bgdd">
+					<button onclick="toggle()" id="btntogg1">Notices</button>
+					<button onclick="toggle1()" id="btntogg2">Latest Uploaded Resources</button>
+					<button onclick="toggle2()" id="btntogg3">Download Section</button>
+				</div>
+				<div class="toggle" id="togg1">
+					<CENTER>
+						<h3>15-Jan-22</h3>
+					</CENTER>
+					<ul style="margin :10px 10px;padding-left: 15px;">
+						<li>TIME TABLE (BATCH 2020, SEM 4TH): B... -
+							<br> CSE
+						</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date sheets for Sessional Test-2 of... - EXAM </li>
+						<hr>
+						<li style="padding: 10px 0px;">Date sheets for Sessional Test-1 of... - EXAM</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date sheets for End Term Examinatio... - EXAM</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date sheets for Reappear End Term E... - EXAM </li>
+						<hr>
+						<li style="padding: 10px 0px;">Revised Datesheet for End Term Exam... - EXAM </li>
+						<hr>
+						<center>
+							<h3>14-Jan-22</h3>
+						</center>
+						<li>OIT Advisory_SPAM Mail_14012022 - OIT </li>
+						<hr>
+						<li style="padding: 10px 0px;text-align: right;list-style: none;">Read More...</li>
+					</ul>
+
+				</div>
+				<div class="toggle" id="togg2">
+					<CENTER>
+						<h3>21-Dec-21</h3>
+					</CENTER>
+					<ul style="margin :10px 10px;padding-left: 15px;">
+
+						<li style="padding: 10px 0px;">DIWT CHO (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">Advance CSS content (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">HTML practice questions (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">HTML and its introuction (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">CSS Properties (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">CSS Practice Question (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">Basic CSS (Sonam Mittal)</li>
+						<hr>
+						<li style="padding: 10px 0px;">Introduction to HTML (Sonam Mittal)</li>
+						<hr>
+						<center>
+							<h3>17-Dec-21</h3>
+						</center>
+						<li>Chapter 10 (PUNINDER)</li>
+						<hr>
+						<center>
+							<h3>15-Dec-21</h3>
+						</center>
+						<li>Chapter 6 (PUNINDER)</li>
+						<li style="padding: 10px 0px;text-align: right;list-style: none;">Read More...</li>
+					</ul>
+				</div>
+				<div class="toggle" id="togg3">
+					<CENTER>
+						<h3>21-Dec-21</h3>
+					</CENTER>
+					<ul style="margin :10px 10px;padding-left: 15px;">
+
+						<li style="padding: 10px 0px;">Hostel Rules</li>
+						<hr>
+						<li style="padding: 10px 0px;">CRITICAL ALERT Wannacry/ WannaC...</li>
+						<hr>
+						<li style="padding: 10px 0px;">Hostal Online Allotment Manual</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date Sheet for ST-II (BPT) Schedu...</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date Sheet for FT-III (Diploma) B'...</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date Sheet for ST-II (Engg) Sched...</li>
+						<hr>
+						<li style="padding: 10px 0px;">Date Sheet for ST-II (Bca & Mca) ...</li>
+						<hr>
+						<center>
+							<h3>17-Dec-21</h3>
+						</center>
+						<li>CoOp Form (Batch 2013) - CSE</li>
+						<li>Date Sheet for ST-I (Bca & Mca) S...</li>
+						<hr>
+						<center>
+							<h3>15-Dec-21</h3>
+						</center>
+						<li>Datesheet For Spl. Re-Appear End Te...</li>
+						<li style="padding: 10px 0px;text-align: right;list-style: none;">Read More...</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="sq1" style="height: 600px;display: flex;flex-direction: column;">
+			<div>
+				<p
+					style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+					<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+				</p>
+				<h4
+					style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 350.3px;font-family:'Oxygen', sans-serif ;">
+					Alerts</h4>
+			</div>
+			<div style="justify-content: center;margin: auto;">
+				<h3
+					style="-webkit-text-stroke: 0.25px rgb(26, 25, 24);-webkit-text-fill-color:rgb(255, 0, 0);font-weight: 900;">
+					No Alerts
+				</h3>
+			</div>
+		</div>
+		<div class="lol2">
+			<div class="sq1"
+				style="height: 150px;display: flex;flex-direction: column;background-size: cover;background-repeat: no-repeat;"
+				id="bgddd">
+				<div>
+					<p
+						style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+						<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+					</p>
+					<h4
+						style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 350.3px;font-family:'Oxygen', sans-serif ;">
+						Pearls Of Wisdom</h4>
+				</div>
+				<div>
+					<center>
+						<p><b>“The time is always right to do what is right.”</b></p>
+					</center>
+				</div>
+			</div>
+			<br>
+			<div class="sq1" style="height: 100px;display: flex;flex-direction: column;">
+				<div>
+					<p
+						style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+						<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+					</p>
+					<h4
+						style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 350.3px;font-family:'Oxygen', sans-serif ;">
+						Online Resources</h4>
+				</div>
+				<div class="IKJ">
+					<center>
+						<b><a href="" style="text-decoration: none;color: black;">Access Online Resources</a></b>
+					</center>
+				</div>
+			</div>
+
+			<br>
+			<div class="sq1" style="height: 400px;display: flex;flex-direction: column;">
+				<div>
+					<p
+						style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+						<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+					</p>
+					<h4
+						style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 350.3px;font-family:'Oxygen', sans-serif ;margin-bottom: 2px;">
+						Birthday Wishes To</h4>
+				</div>
+				<div style="overflow: auto;margin: 0px;padding: 0px;">
+					<ul type=none style="padding: 0px;margin: 8px;margin-top: 0px;">
+						<li class="listy"><img src="./images/girl.png" style="height: 60px;">
+							<p style="display:inline;position: relative;left:112px; top: 4px;"><b>Student1</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/boy.jpg" style="height: 60px;">
+							<p style="display:inline;position: relative;left:100px; top: 4px;"><b>Student2</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/boy.jpg" style="height: 60px;">
+							<p style="display:inline;position: relative;left:100px; top: 4px;"><b>Student3</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/girl.png" style="height: 60px;">
+							<p style="display:inline;position: relative;left:112px; top: 4px;"><b>Student4</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/boy.jpg" style="height: 60px;">
+							<p style="display:inline;position: relative;left:100px; top: 4px;"><b>Student5</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/girl.png" style="height: 60px;">
+							<p style="display:inline;position: relative;left:112px; top: 4px;"><b>Student6</b></p>
+						</li>
+						<hr>
+						<li class="listy"><img src="./images/girl.png" style="height: 60px;">
+							<p style="display:inline;position: relative;left:112px; top: 4px;"><b>Student7</b></p>
+						</li>
+						<hr>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="lasttwo" style="display: flex;
+		padding: -26px;
+		justify-content: space-between;">
+			<div class="sq1 fix" style="height: 370px;display: flex;flex-direction: column;margin-right: 50px;">
+				<div>
+					<p
+						style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+						<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+					</p>
+					<h4
+						style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 400.3px;font-family:'Oxygen', sans-serif ;">
+						Event Calender</h4>
+				</div>
+				<div class="IKJ">
+					<div class="cal">
+						<iframe
+							src="https://calendar.google.com/calendar/embed?src=c_stis2ln7blthqteeqshq4ellao%40group.calendar.google.com&ctz=Asia%2FKolkata"
+							style="border: 0" width="450px" height="300px" frameborder="0" scrolling="no"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="sq1 fix1" style="height: 370px;display: flex;flex-direction: column;">
+				<div>
+					<p
+						style="border-top-left-radius: 10px;padding: 13.4px 12px 10.4px 12px;display: inline;margin-top: 0px;background-color: #ed1c24 ;">
+						<img src="images/arrow1.png" height="10px" ;width="10px" ;>
+					</p>
+					<h4
+						style="background-color: rgb(0, 0, 0); color: white;margin-top: 0px;border-radius: 0px 10px 0px 0px ;padding:11px 10px 10px 10px;display: inline-block;width: 400.3px;font-family:'Oxygen', sans-serif ;">
+						Attendance</h4>
+				</div>
+				<div class="IKJ">
+					<div class="cal" style="margin-left:5px;">
+						<iframe title="Attendence" aria-label="Interactive line chart" id="datawrapper-chart-8kfTp"
+							src="https://datawrapper.dwcdn.net/8kfTp/12/" scrolling="no" frameborder="0"
+							class="graph"></iframe>
+						<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+						</script>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function toggle() {
+			var x = document.getElementById("togg1");
+			var y = document.getElementById("togg2");
+			var z = document.getElementById("togg3");
+
+
+			x.style.display = "block";
+			y.style.display = "none";
+			z.style.display = "none";
+
+
+		}
+		function toggle1() {
+			var x = document.getElementById("togg1");
+			var y = document.getElementById("togg2");
+			var z = document.getElementById("togg3");
+
+
+			y.style.display = "block";
+			x.style.display = "none";
+			z.style.display = "none";
+
+
+		}
+		function toggle2() {
+			var x = document.getElementById("togg1");
+			var y = document.getElementById("togg2");
+			var z = document.getElementById("togg3");
+
+
+			z.style.display = "block";
+			x.style.display = "none";
+			y.style.display = "none";
+
+
+		}
+		alert("Welcome Student | 211099xxxx", "Viv");
+		function stopp() {
+			for (let i = 0; i < 5; i++) {
+				document.getElementsByClassName("grades")[i].style.opacity = "1";
+
+			}
+		}
+		const myTimeout = setTimeout(stopp, 2000);
+		function newss() {
+			if (document.getElementById("newws").classList.contains("newsaction")) {
+				document.getElementById("newws").classList.remove("newsaction");
+				document.getElementById("tutu").style.visibility = "hidden";
+				;
+			}
+			else {
+				document.getElementById("newws").classList.add("newsaction");
+				document.getElementById("tutu").style.visibility = "visible";
+			}
+
+		}
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		function dark() {
+			let grades = document.getElementsByClassName("grades");
+			let sq1 = document.getElementsByClassName("sq1");
+			document.getElementById("marginnrml").style.marginBottom = '-29px';
+			document.getElementById("recentd").style.backgroundColor = "#201d1dd3"
+			document.getElementById("normalbtn").style.display = "block";
+			document.getElementById("blackfont").style.color = "white";
+			document.getElementById("blackfon").style.color = "white";
+			document.getElementById("blackfo").style.color = "white";
+			document.getElementById("bgdd").style.color = "#201d1dd3";
+			document.getElementById("bgddd").style.backgroundImage = "url('images/skyyd.jpg')";
+			document.getElementById("tutu").style.backgroundColor = "black";
+			document.querySelector("body").style.backgroundImage = "url('images/univd.jpg')";
+
+			for (let j = 0; j < grades.length; j++) {
+				grades[j].classList.add("gradesd");
+
+			}
+			for (let j = 0; j < sq1.length; j++) {
+				sq1[j].classList.add("sq1d");
+
+			}
+
+
+
+		}
+
+		function normal() {
+			let grades = document.getElementsByClassName("grades");
+			let sq1 = document.getElementsByClassName("sq1");
+			document.getElementById("marginnrml").style.marginBottom = '0px';
+			document.getElementById("darkbtn").style.display = "block";
+			document.getElementById("normalbtn").style.display = "none";
+			document.getElementById("blackfont").style.color = "black";
+			document.getElementById("blackfon").style.color = "black";
+			document.getElementById("blackfo").style.color = "black";
+			document.getElementById("bgdd").style.backgroundColor = "#d3d3d3";
+			document.getElementById("bgddd").style.backgroundImage = "url('images/skyy.jpg')";
+			document.getElementById("tutu").style.backgroundColor = "white";
+			document.querySelector("body").style.backgroundImage = "url('images/univ.png')";
+			for (let j = 0; j < grades.length; j++) {
+				grades[j].classList.remove("gradesd");
+
+			}
+			for (let j = 0; j < sq1.length; j++) {
+				sq1[j].classList.remove("sq1d");
+
+			}
+
+
+
+		}
+
+	</script>
+
+
+</body>
+
+</html>

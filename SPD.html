@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Days+One&family=Moo+Lah+Lah&family=Oxygen&family=PT+Sans+Narrow:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<title>Student Info</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap"
+		rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="./images/icon.png">
+	<style type="text/css">
+		.container {
+			margin: 10px;
+			border: 2px solid grey;
+			padding: 20px;
+			border-radius: 10px;
+			background-color: white;
+		}
+
+		input[type="button"] {
+			background-color: red;
+			color: white;
+			font-size: 16px;
+			padding: 10px 17px;
+			border-radius: 8px;
+			font-weight: bold;
+			border: 0px;
+			transition: 0.25s;
+		}
+		input:hover[type="button"] {
+			background-color: red;
+			color: rgb(255, 255, 255);
+			padding: 11px 20px;
+			cursor: pointer;
+		}
+		.enter {
+			border: 1px;
+			background-color: lightgray;
+			border-radius: 10px;
+			margin: 10px 200px;
+			padding: 20px;
+			z-index: -1;
+		}
+
+		fieldset {
+			border-radius: 10px;
+			border: 2px dashed grey;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			background: url(./images/univ.png);
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<img src="images/logo.png" height="70" width="300" style="animation: slideright 1s ease-out 0s 1 forwards;">
+
+	<nav class="nav">
+		<ul>
+			<div class="dropdown">
+				<li><a href="project.html"><b>Home</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Student Info</b></a>
+					<div class="dropdown-content">
+					
+						<a href="./Apply lv.html">Apply Duty/Medical leave</a>
+						<a href="">Download Section</a>
+						<a href="./Gate Pass.html">Gate Pass</a>
+						<a href="javascript:void(0);" name="My Window Name" title=" My title here "
+							onclick="window.open(&quot;changepass.html&quot;,&quot;Ratting&quot;,&quot;width=550,height=170,left=150,top=200,toolbar=0,status=0,&quot;);">Change
+							Password</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Acadamic</b></a>
+					<div class="dropdown-content">
+						<a href="./TIME TABLE.HTML">Time Table</a>
+						<a href="./ATTENDANCE.HTML">Display Attendence</a>
+						<a href="./DISPLAY MARKS.HTML">Display Marks</a>
+						<a
+							href="https://web.iitd.ac.in/~jay/dsl732/studentpages/dds196018/private_html/template/assignments_nav.html">Assignments</a>
+
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href=""><b>Pay Fee</b></a>
+					<div class="dropdown-content">
+						<a href="./Online fee payment.html">Online Fee Payment</a>
+						<a href="./FINE.HTML">Fine</a>
+						
+
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./feedback.html"><b>Feedback</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./project.html"><b>Hostel</b></a>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="./uploaddoc.html"><b>Upload Documents</b></a>
+
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>Registration forms</b></a>
+					<div class="dropdown-content">
+						
+						<a href="./SPD.html">Student Parent Details</a>
+						
+												<a href="./ECell.html">E-Cell Registration Form</a>
+                        <a href="./extracurricular.html">Extra Curricular</a>
+					</div>
+			</div>
+			</li>
+			<div class="dropdown">
+				<li><a href="#"><b>About us</b></a>
+
+				</li>
+				<li style="color: black;" id="ccd"><a href="#"><b>Covid Info</b></a></li>
+
+		</ul>
+	</nav>
+	<form>
+		<center>
+			<h2
+				style="background-color: rgba(0, 0, 0, 0.267); padding: 10px 10px;margin: 0px 13vw;border-radius: 10px ">
+				STUDENT PARENT DETAILS</h2>
+		</center>
+		<div class="enter">
+			<div class="container">
+				<fieldset>
+					<br>
+					<br>
+
+					<label>NAME*</label>
+
+					<input type="text" name="name" id="name" text="enter" placeholder="Enter you Name "
+						style="margin-left: 402px;">
+
+					<br>
+					<br>
+					<label>ROLL NO.*</label>
+
+					<input type="text" name="roll" id="roll" text="enter" placeholder="Enter your Roll no."
+						style="margin-left: 380px;">
+
+					<br>
+					<br>
+					<label>GENDER* </label>
+					&emsp;&emsp;
+					<label>Male</label>
+					<input type="radio" id="Gender" name="1" text="enter" value="Male">
+					<label>Female</label>
+					<input type="radio" id="Gender" name="1" text="enter" value="Female">
+
+					<br>
+					<br>
+					<label>NATIONALITY* </label>
+					&emsp;&emsp;
+					<label>Indian</label>
+					<input type="radio" id="NATIONALITY" name="2" text="enter" value="Indian">
+					<label>Foreign</label>
+					<input type="radio" id="NATIONALITY" name="2" text="enter" value="Foreign">
+
+					<br>
+					<br>
+					<label>ADHAR NO.*</label>
+
+					<input type="text" name="aadhar" id="aadhar" text="enter" placeholder="Enter you 12 digit ADHAR NO."
+						style="margin-left: 365px">
+
+					<br>
+					<br>
+					<label>FATHER NAME*</label>
+
+					<input type="text" name="father" id="father" text="enter" placeholder="Enter you FATHER Name "
+						style="margin-left: 340px">
+
+					<br>
+					<br>
+					<label>MOTHER NAME*</label>
+
+					<input type="text" name="mother" id="mother" text="enter" placeholder="Enter you MOTHER Name "
+						style="margin-left: 330px">
+
+					<br>
+					<br>
+					<label>GUARDIAN NAME* (if any)</label>
+
+					<input type="text" name="guardian" id="guardian" text="enter" placeholder="Enter you GUARDIAN Name "
+						style="margin-left: 265px">
+
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Father's Details</h3>
+					</legend>
+
+					<label>MOBILE NO.</label>
+
+					<input type="text" name="mobile" id="mobile" text="enter" placeholder="Enter your MOBILE no."
+						style="margin-left: 360px">
+
+					<br>
+					<br>
+					<label>EMAIL ID</label>
+
+					<input type="text" name="email" id="email" text="enter" placeholder="abc@xyz"
+						style="margin-left: 380px">
+
+					<br>
+					<br>
+					<label>NATIONALITY* </label>
+					&emsp;&emsp;
+					<label>Indian</label>
+					<input type="radio" id="NATIONALITY" name="3" text="enter" value="Indian">
+					<label>Foreign</label>
+					<input type="radio" id="NATIONALITY" name="3" text="enter" value="Foreign">
+
+					<br>
+					<br>
+					<label>ADHAR NO.*</label>
+					<input type="text" name="aadhar2" id="aadhar2" text="enter"
+						placeholder="Enter you 12 digit ADHAR NO." style="margin-left: 360px">
+
+					<br>
+					<br>
+					<label>PROFESSION</label>
+					&emsp;&emsp;
+					<label>Private</label>
+					<input type="radio" id="PROFESSION" name="4" text="enter" value="Private">
+					<label>Government</label>
+					<input type="radio" id="PROFESSION" name="4" text="enter" value="Government">
+					<label>Agriculture</label>
+					<input type="radio" id="PROFESSION" name="4" text="enter" value="Agriculture">
+
+					<br>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Father's Professional Details</h3>
+					</legend>
+
+					<label>BUISNESS NAME/ NAME OF THE
+						<br>
+						COMPANY WHERE EMPLOYED*</label>
+					<input type="text" name="company" id="company" text="enter" value="" style="margin-left: 240px">
+					<br>
+					<br>
+					<label>PLACE*</label>
+					<input type="text" name="place" id="place" text="enter" value="" style="margin-left: 410px">
+					<br>
+					<br>
+					<label>ADDRESS*</label>
+					<input type="text" name="address" id="address" text="enter" value="" style="margin-left: 390px">
+					<br>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Mother's Details</h3>
+					</legend>
+
+					<label>MOBILE NO.</label>
+					<input type="text" name="mobile2" id="mobile2" text="enter" placeholder="Enter your MOBILE no."
+						style="margin-left:370px">
+					<br>
+					<br>
+					<label>EMAIL ID</label>
+					<input type="text" name="email2" id="email2" text="enter" placeholder="abc@xyz"
+						style="margin-left: 390px">
+					<br>
+					<br>
+					<label>NATIONALITY* </label>
+					&emsp;&emsp;
+					<label>Indian</label>
+					<input type="radio" id="NATIONALITY" name="5" text="enter" value="Indian">
+					<label>Foreign</label>
+					<input type="radio" id="NATIONALITY" name="5" text="enter" value="Foreign">
+					<br>
+					<br>
+					<label>ADHAR NO.*</label>
+					<input type="text" name="aadhar3" id="aadhar3" text="enter"
+						placeholder="Enter you 12 digit ADHAR NO." style="margin-left: 370px">
+					<br>
+					<br>
+					<label>PROFESSION*</label>
+					&emsp;&emsp;
+					<label>Home Maker</label>
+					<input type="radio" id="PROFESSION" name="6" text="enter" value="Home Maker">
+					<label>Private</label>
+					<input type="radio" id="PROFESSION" name="6" text="enter" value="Private">
+					<label>Governmnet</label>
+					<input type="radio" id="PROFESSION" name="6" text="enter" value="Government">
+					<br>
+					<br>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Guardian's Details</h3>
+					</legend>
+
+
+					<label>MOBILE NO.</label>
+					<input type="text" name="username" id="name" text="enter" placeholder="Enter your MOBILE no."
+						style="margin-left: 370px;">
+					<br>
+					<br>
+					<label>EMAIL ID</label>
+					<input type="text" name="username" id="name" text="enter" placeholder="abc@xyz"
+						style="margin-left: 390px;">
+					<br>
+					<br>
+					<label>NATIONALITY* </label>
+					&emsp;&emsp;
+					<label>Indian</label>
+					<input type="radio" id="NATIONALITY" name="7" text="enter" value="Indian">
+					<label>Foreign</label>
+					<input type="radio" id="NATIONALITY" name="7" text="enter" value="Foreign">
+					<br>
+					<br>
+					<label>ADHAR NO.*</label>
+					<input type="text" name="username" id="name" text="enter" placeholder="Enter you 12 digit ADHAR NO."
+						style="margin-left: 370px;">
+					<br>
+					<br>
+					<label>PROFESSION*</label>
+					&emsp;&emsp;
+					<label>Home Maker</label>
+					<input type="radio" id="PROFESSION" name="8" text="enter" value="Home Maker">
+					<label>Private</label>
+					<input type="radio" id="PROFESSION" name="8" text="enter" value="Private">
+					<label>Governmnet</label>
+					<input type="radio" id="PROFESSION" name="8" text="enter" value="Government">
+					<br>
+					<br>
+				</fieldset>
+				<br>
+				<center><input type="button" value="submit" onclick="validatee()"></center>
+
+			</div>
+		</div>
+		<script>
+			function validatee() {
+				var ek = document.querySelector('input[name="1"]:checked');
+				var dwo = document.querySelector('input[name="2"]:checked');
+				var teen = document.querySelector('input[name="3"]:checked');
+				var four = document.querySelector('input[name="4"]:checked');
+				var panch = document.querySelector('input[name="5"]:checked');
+				var six = document.querySelector('input[name="6"]:checked');
+				var saat = document.querySelector('input[name="7"]:checked');
+				var aath = document.querySelector('input[name="8"]:checked');
+				//   .................
+				let name = document.getElementById("name").value;
+				let roll = document.getElementById("roll").value;
+				let aadhar = document.getElementById("aadhar").value;
+				let father = document.getElementById("father").value;
+				let mother = document.getElementById("mother").value;
+				let mobile = document.getElementById("mobile").value;
+				let email = document.getElementById("email").value;
+				let aadhar2 = document.getElementById("aadhar2").value;
+				let company = document.getElementById("company").value;
+				let place = document.getElementById("place").value;
+				let address = document.getElementById("address").value;
+				let mobile2 = document.getElementById("mobile2").value;
+				let email2 = document.getElementById("email2").value;
+				let aadhar3 = document.getElementById("aadhar3").value;
+				//   .............
+				let name1 = document.getElementById("name");
+				let roll1 = document.getElementById("roll");
+				let aadhar1 = document.getElementById("aadhar");
+				let father1 = document.getElementById("father");
+				let mother1 = document.getElementById("mother");
+				let mobile1 = document.getElementById("mobile");
+				let email1 = document.getElementById("email");
+				let aadhar21 = document.getElementById("aadhar2");
+				let company1 = document.getElementById("company");
+				let place1 = document.getElementById("place");
+				let address1 = document.getElementById("address");
+				let mobile21 = document.getElementById("mobile2");
+				let email21 = document.getElementById("email2");
+				let aadhar31 = document.getElementById("aadhar3");
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+				if (dwo != null && teen != null && four != null && panch != null && six != null && saat != null && aath != null  && ek != null) {
+					if (name != '') {
+						if (roll != ''  && roll.length == 10) {
+							if (aadhar != '' && aadhar.length == 12) {
+								if (father != '') {
+									console.log
+									if (mother != '') {
+										if (mobile != '' && mobile.length == 10) {
+											if (email.match(mailformat)) {
+												if (aadhar2 != '' && aadhar.length == 12) {
+													if (company != '') {
+														if (place != '') {
+															if (address != '') {
+																if (mobile2 != '' && mobile.length == 10) {
+																	if (email2.match(mailformat)) {
+																		if (aadhar3 != '' && aadhar.length == 12) {
+																			alert("Data Submitted Successfully");
+
+																		}
+																		else {
+																			alert("Incorect Aadhar no.");
+																			aadhar31.focus()
+																		}
+																	}
+																	else {
+																		alert("Incorect Email");
+																		email21.focus()
+																	}
+																}
+																else {
+																	alert("Incorect Mobile No.");
+																	mobile21.focus()
+																}
+															}
+
+															else {
+																alert("Please Fill Address");
+																address1.focus()
+															}
+														}
+														else {
+															alert("Please Fill Place");
+															place1.focus()
+														}
+													}
+													else {
+														alert("Please Fill Company name");
+														company1.focus()
+													}
+												}
+												else {
+													alert("Incorrect Aadhar No.");
+													aadhar21.focus()
+												}
+											}
+											else {
+												alert("Incorrect Email");
+												email1.focus()
+											}
+										}
+										else {
+											alert("Incorrect Mobile No.");
+											mobile1.focus()
+										}
+									}
+									else {
+										alert("Please Fill Mother's name");
+										mother1.focus()
+									}
+								}
+								else {
+									alert("Please Fill Father's name");
+									father1.focus()
+								}
+							}
+							else {
+								alert("Incorrect Aadhar No.");
+								aadhar1.focus()
+							}
+						}
+						else {
+							alert("Incorrect Roll No.");
+							roll1.focus()
+						}
+					}
+					else {
+						alert("Please Fill Your Name");
+						name1.focus()
+					}
+				}
+				else {
+					alert("Please Check all circles!");
+				}
+
+
+
+
+
+			}
+		</script>
+</body>
+
+</htmL>
