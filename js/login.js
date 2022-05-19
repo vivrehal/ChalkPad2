@@ -2,7 +2,7 @@ var passp = "root"
 function user1() {
     var user = document.getElementById('name').value;
     var pass = document.getElementById('password').value;
-    if (user == "student" && pass == passp) {
+    if (user == "student" && pass == "scm") {
         window.open("project.html");
 
     } else {

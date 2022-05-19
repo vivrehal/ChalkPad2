@@ -60,7 +60,7 @@
 			font-size: 16px;
 		}
 
-		.record table tr:nth-child(odd) {
+		.record table tr:nth-child(odd) { 
 			background-color: lightgrey
 		}
 
@@ -86,10 +86,23 @@
 		}
 
 		table tr,
-		table td {
-			padding: 1vh 0.1vw;
+		table td,th {
+			padding: 15px;
+			text-align: center;
 		}
 		#hutt{font-size: 11px;}
+		table{
+			border-spacing: 5px;
+		}
+		.zoom{
+			transition: transform .5s;
+		}
+		.zoom:hover{
+			color: white;
+			background-color: red;
+			transform: scale(1.05);
+			/* transition: .5s; */
+		}
 	</style>
 </head>
 
@@ -203,82 +216,65 @@
 
 				</tr>
 				<tr>
-					<td><center>Monday</td>
-					<td> </td>
-					<td> </td>
+					<td> Monday</td>
+					<hover><td class="zoom" colspan="2">OOPS </td></hover>
+					<hover><td class="zoom" colspan="2">AWD</td></hover>
 					<td>
-						<CENTER>IWT</CENTER>
 					</td>
-					<td>
-						<CENTER>IWT</CENTER>
+					<hover><td class="zoom">
+						OS(Linux)
 					</td>
-					<td> </td>
-					<td>
-						<CENTER>CASA</CENTER>
+					<hover><td class="zoom">DE&T </td>
+					<td class="zoom"><hover>BEE</hover>
+						
 					</td>
-					<td></td>
-					<td></td>
 
 				</tr>
 				<tr>
-					<td><center>Tuesday</td>
-					<td> </td>
-					<td> </td>
+					<td> Tuesday</td>
+					<td class="zoom" colspan="2"><hover>BEE Labs</hover> </td>
+					<td class="zoom" colspan="2"><hover>MCP Labs</hover> </td>
 					<td>
-						<CENTER>IWT</CENTER>
 					</td>
-					<td>
-						<CENTER>IWT</CENTER>
+					<td class="zoom">
+						<hover>BEE</hover> 
 					</td>
-					<td> <center>CASA</td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td class="zoom" colspan="2"><hover>OOPS</hover></td>
 				</tr>
 				<tr>
-					<td><center>Wednesday</td>
-					<td> </td>
-					<td> </td>
+					<td> Wednesday</td>
+					<td class="zoom" colspan="2"><hover>OS(Linux)</hover> </td>
+					<td class="zoom" colspan="2"><hover>OOPS</hover> </td>
 					<td>
-						<CENTER>IWT</CENTER>
+					
 					</td>
-					<td>
-						<CENTER>IWT</CENTER>
+					<td class="zoom"><hover>DE&T</hover> 
 					</td>
-					<td></td>
-					<td>
-						<CENTER>CASA</CENTER>
-					</td>
-					<td></td>
-					<td>
-						<CENTER>CASA</CENTER>
-					</td>
+					<td class="zoom" colspan="2"><hover>AWD</hover></td>
 				</tr>
 				<tr>
-					<td><center>Thursday</td>
-					<td> </td>
-					<td> </td>
-					<td>
-						<CENTER>IWT</CENTER>
+					<td> Thursday</td>
+					<td class="zoom"><hover>SCM</hover> </td>
+					<td class="zoom"><hover>OOPS</hover> </td>
+					<td class="zoom">
+						<hover>DE&T</hover> 
 					</td>
+					<td class="zoom"><hover>BEE</hover> </td>
 					<td> </td>
-					<td> </td>
-					<td>
-						<center>CASA</center>
+					<td class="zoom"><hover>OS(Linux)</hover>
 					</td>
-					<td><center>IWT</td>
-					<td><center>IWT</td>
+					<td class="zoom" colspan="2"><hover>AWD</hover></td>
 				</tr>
 				<tr>
-					<td><center>Friday</td>
+					<td> Friday</td>
+					<td class="zoom"><hover>DE&T</hover> </td>
+					<td class="zoom"><hover>OS(Linux)</hover> </td>
+					<td class="zoom"><hover>OOPS</hover> </td>
 					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td> </td>
-					<td><center>CASA</td>
-					<td> </td>
-					<td><center>IWT</center></td>
-					<td><center>IWT</center></td>
+					<td class="zoom"><hover>DE&T</hover></td>
+					<td class="zoom"><hover>SCM</hover> </td>
+					<td class="zoom" colspan="2"><hover>BEE Labs</hover></td>
+					
 
 				</tr>
 				</forte>
